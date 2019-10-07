@@ -1,0 +1,5 @@
+<div>
+  <input #pokemon type="text">
+  <button (click)="catchPokemon(pokemon.value)">Catch!!</button>
+  <app-pokemon-list [pokemonList]="pokemonList"></app-pokemon-list>
+</div>

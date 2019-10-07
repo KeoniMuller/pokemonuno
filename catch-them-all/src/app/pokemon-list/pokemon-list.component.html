@@ -1,0 +1,15 @@
+<br>
+<span *ngIf="pokemonList.length===0">No Pokemon Catched</span>
+<div *ngFor="let pokemon of pokemonList">
+  <img [src]="pokemon.sprites.front_default">
+  PokemonID: {{pokemon.id}}
+  {{pokemon.name}}
+  <button (click)="addToParty(pokemon)">Add to party</button>
+</div>
+
+<p>Pokemon Party</p>
+<div *ngFor="let pokemon of pokemonParty">
+  <img [src]="pokemon.img">
+  PokemonID: {{pokemon.id}}
+  {{pokemon.name}}
+</div>
